@@ -1,0 +1,16 @@
+.all-vacancies {
+    position: relative;
+
+    a {
+        position: absolute;
+        top: -45px;
+        right: 4px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #20A94A;
+    }
+
+    @media (max-width: 768px) {
+        visibility: hidden;
+    }
+}

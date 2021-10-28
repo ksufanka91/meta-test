@@ -70,114 +70,12 @@ h3 {
 
 @import "scss/components/products";
 
+@import "scss/components/team";
+
+@import "scss/components/all-vacacies";
 
 
-.team {
-    margin-bottom: 44px;
 
-
-    .row {
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: space-between;
-
-        @media (max-width: 768px) {
-            display: flex;
-            width: 100%;
-            flex-wrap: wrap;
-            margin-bottom: 0;
-        }
-
-        .item {
-            position: relative;
-            //width: 215px;
-            width: calc(25% - 20px * 3 / 4);
-            height: 215px;
-            border-radius: 8px;
-            overflow: hidden;
-
-            &:hover {
-                .description {
-                    opacity: 1;
-                }
-            }
-
-            @media (max-width: 768px) {
-                width: calc(50% - 15px / 2);
-                height: 165px;
-                margin-bottom: 15px;
-            }
-        }
-
-        .avatar {
-            display: block;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .description {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            color: #fff;
-            background-color: #601dc0;
-            padding: 28px 10px;
-
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: column;
-
-            opacity: 0;
-            transition: opacity 0.3s;
-
-            .name {
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 22px;
-                margin-bottom: 10px;
-            }
-
-            .post {
-                font-size: 16px;
-                line-height: 22px;
-            }
-        }
-
-        .show-all {
-            .description {
-                align-items: center;
-                justify-content: center;
-                opacity: 1;
-                padding: 0;
-            }
-
-            .arrow {
-                display: block;
-                margin-bottom: 25px;
-            }
-        }
-    }
-}
-
-.all-vacancies {
-    position: relative;
-
-    a {
-        position: absolute;
-        top: -45px;
-        right: 4px;
-        font-size: 16px;
-        line-height: 22px;
-        color: #20A94A;
-    }
-
-    @media (max-width: 768px) {
-        visibility: hidden;
-    }
-}
 
 .vacancies {
     margin-bottom: 57px;
