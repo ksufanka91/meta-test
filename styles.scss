@@ -14,6 +14,18 @@ body {
     }
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 17px;
+}
+
 .hidden-desktop {
     @media (min-width: 769px) {
         display: none !important;
@@ -44,60 +56,7 @@ body {
     }
 }
 
-.header {
-    background-color: #fff;
-    padding: 15px;
-    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.5);
-
-    .header-inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu {
-        display: flex;
-        justify-content: space-between;
-
-        .item {
-            position: relative;
-            margin-right: 20px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #7c7c7c;
-
-            &:after {
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                bottom: -26px;
-                left: 0;
-                background: #601dc0;
-                opacity: 0;
-                transition: opacity 0.3s;
-                pointer-events: none;
-            }
-
-            &:last-child {
-                margin-right: 0;
-            }
-
-            &:hover {
-                color: #000;
-
-                &:after {
-                    opacity: 1;
-                }
-            }
-
-            a {
-                color: inherit;
-                transition: color 0.3s;
-            }
-        }
-    }
-}
+@import "scss/components/header";
 
 .breadcrumbs {
     display: flex;
@@ -153,7 +112,6 @@ body {
         margin-top: 23px;
     }
 }
-
 
 .slogan {
     background-color: #fff;
@@ -251,18 +209,6 @@ body {
         border-radius: 0;
         margin: 0 -15px 40px;
     }
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 17px;
 }
 
 .products {
