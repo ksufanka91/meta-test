@@ -519,7 +519,7 @@ h3 {
   }
 }
 .vacancies .splide__arrow {
-  background: #fff url("images/products-slider-arrow.svg") no-repeat center;
+  background: #fff url("../images/products-slider-arrow.svg") no-repeat center;
   width: 28px;
   height: 28px;
   opacity: 1;

@@ -1,0 +1,76 @@
+.vacancies {
+    margin-bottom: 57px;
+    position: relative;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 215px;
+        height: 100%;
+        background-color: #fff;
+        padding: 50px 9px 20px 15px;
+        border-radius: 8px;
+
+        .post {
+            color: #601DC0;
+            font-weight: bold;
+            line-height: 22px;
+            margin-bottom: 20px;
+        }
+
+        .wages,
+        .location {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #999999;
+        }
+
+        .location {
+            margin-top: 37px;
+        }
+    }
+
+    img {
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translate(0, -50%)
+    }
+
+    .splide__list {
+        @media (max-width: 768px) {
+            align-items: stretch;
+        }
+    }
+
+    .splide__arrow {
+        background: #fff url("../images/products-slider-arrow.svg") no-repeat center;
+        width: 28px;
+        height: 28px;
+        opacity: 1;
+        border: 1px solid #c4c4c4;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        &:disabled {
+            display: none;
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    .splide__arrow--prev {
+        left: -14px;
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    .splide__arrow--next {
+        right: -14px;
+    }
+}

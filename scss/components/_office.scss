@@ -1,0 +1,99 @@
+.office {
+    margin-bottom: 40px;
+
+    &.first {
+        margin-top: -57px;
+    }
+
+    &:not(.first) {
+        .row {
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    .col {
+        flex: 1;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        &:first-child {
+            margin-right: 20px;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .office-info {
+        background-color: #fff;
+        padding: 30px 47px 30px 73px;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .location {
+        font-weight: bold;
+        font-size: 30px;
+        color: #601DC0;
+        margin-bottom: 20px;
+
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+
+    .office-contact {
+        position: relative;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+            margin-left: 20%;
+
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #000;
+        }
+
+        img {
+            position: absolute;
+            left: -30px;
+            top: 2px;
+
+
+        }
+    }
+
+    .building {
+        max-width: 100%;
+
+        @media (max-width: 768px) {
+            position: relative;
+            top: -10px;
+            width: 100%;
+        }
+    }
+}

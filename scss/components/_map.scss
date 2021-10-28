@@ -1,0 +1,22 @@
+.map {
+    position: relative;
+    margin-bottom: 40px;
+
+    .map-main {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .placemark {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    @media (max-width: 768px) {
+        border-radius: 0;
+        margin: 0 -15px 40px;
+    }
+}
