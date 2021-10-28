@@ -1,0 +1,26 @@
+.breadcrumbs {
+    display: flex;
+    position: relative;
+    margin: 33px 0 55px 0;
+    font-size: 14px;
+
+    .item {
+        position: relative;
+        margin-right: 24px;
+
+        &:after {
+            content: '/';
+            position: absolute;
+            right: -17px;
+            color: forestgreen;
+        }
+
+        &:last-child:after {
+            content: none;
+        }
+
+        a {
+            color: #000;
+        }
+    }
+}
