@@ -1,0 +1,27 @@
+.brief-info {
+    margin-bottom: 60px;
+
+    .section {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+
+        img {
+            margin-right: 37px;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                object-fit: contain;
+                margin-bottom: 42px;
+            }
+        }
+    }
+
+    .text {
+        margin-top: 23px;
+    }
+}
