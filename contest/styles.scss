@@ -362,7 +362,7 @@ main {
         border-radius: 4px;
         margin-bottom: 18px;
         appearance: none;
-        background-image: url("../images/black-arrow-down.svg");
+        background-image: url("images/black-arrow-down.svg");
         background-repeat: no-repeat;
         background-position: 94% 50%;
     }
@@ -1209,11 +1209,11 @@ main {
     }
 
     .arrow-back {
-        background: url(../images/pagination-arrow-previous.svg) no-repeat center;
+        background: url(images/pagination-arrow-previous.svg) no-repeat center;
     }
 
     .arrow-next {
-        background: url(../images/pagination-arrow-next.svg) no-repeat center;
+        background: url(images/pagination-arrow-next.svg) no-repeat center;
     }
 }
 
@@ -1786,7 +1786,7 @@ main {
     }
 
     .splide__arrow {
-        background: #fff url("../images/partners-slider-arrow-next.svg") no-repeat center;
+        background: #fff url("images/partners-slider-arrow-next.svg") no-repeat center;
         width: 28px;
         height: 28px;
         opacity: 1;
