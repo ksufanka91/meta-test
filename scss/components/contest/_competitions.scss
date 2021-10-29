@@ -1,0 +1,20 @@
+.competitions {
+    margin-bottom: 33px;
+
+    .item {
+        display: flex;
+        margin-bottom: 15px;
+        color: #000;
+        text-decoration: none;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    .past-competitions {
+        color: #000;
+        text-decoration: none;
+        line-height: 16px;
+    }
+}

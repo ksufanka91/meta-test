@@ -82,76 +82,16 @@ main {
     flex: 1;
 }
 
-@import "../scss/components/header";
+@import "../scss/components/contest/header";
 
-.right-menu {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
+@import "../scss/components/contest/right-menu";
 
-.search {
-    margin-right: 25px;
-}
+@import "../scss/components/contest/search";
 
-.breadcrumbs {
-    display: flex;
-    position: relative;
-    margin-bottom: 33px;
-    font-size: 14px;
+@import "../scss/components/contest/breadcrumbs";
 
-    @media (max-width: 768px) {
-        margin-bottom: 20px;
-    }
+@import "../scss/components/contest/competitions";
 
-    .item {
-        position: relative;
-        margin-right: 14px;
-        color: #000;
-        text-decoration: none;
-        line-height: 16px;
-
-        @media (max-width: 768px) {
-            font-size: 16px;
-
-        }
-
-        &:after {
-            content: '/';
-            position: absolute;
-            right: -10px;
-            color: forestgreen;
-        }
-
-        &:last-child:after {
-            content: none;
-        }
-    }
-}
-
-.competitions {
-    margin-bottom: 33px;
-
-    .item {
-        display: flex;
-        margin-bottom: 15px;
-        color: #000;
-        text-decoration: none;
-
-        img {
-            margin-right: 10px;
-        }
-    }
-
-    .past-competitions {
-        color: #000;
-        text-decoration: none;
-        line-height: 16px;
-    }
-}
 
 .top-users {
     .item {
@@ -1156,7 +1096,6 @@ main {
         }
     }
 }
-
 
 .more-matches {
     margin-bottom: 20px;
