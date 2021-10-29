@@ -1,9 +1,9 @@
 /* Error: Can't find stylesheet to import.
  *     ,
- * 111 | @import "../scss/components/contest/forecast-table";
- *     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ * 119 | @import "../scss/components/contest/stat-trend";
+ *     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *     '
- *   styles.scss 111:9  root stylesheet */
+ *   styles.scss 119:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a     \2577 \a 111 \2502  @import \"../scss/components/contest/forecast-table\";\a     \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   styles.scss 111:9  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a     \2577 \a 119 \2502  @import \"../scss/components/contest/stat-trend\";\a     \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   styles.scss 119:9  root stylesheet";
 }

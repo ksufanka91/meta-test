@@ -110,6 +110,13 @@ main {
 
 @import "../scss/components/contest/forecast-table";
 
+@import "../scss/components/contest/more-matches";
+
+@import "../scss/components/contest/pagination";
+
+@import "../scss/components/contest/promo";
+
+@import "../scss/components/contest/stat-trend";
 
 
 
@@ -122,92 +129,6 @@ main {
 
 
 
-
-
-
-
-.more-matches {
-    margin-bottom: 20px;
-
-    .button {
-        width: 100%;
-        color: #000;
-        border: 2px solid #E9E9E9;
-        cursor: pointer;
-    }
-}
-
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-
-    .inner {
-        display: inline-flex;
-        box-shadow: 0 0 20px -10px #96AAB4;
-        border-radius: 25px;
-    }
-
-    .item {
-        font-size: 16px;
-        padding: 12px 19px;
-
-        @media (max-width: 768px) {
-            padding: 12px 17px;
-        }
-
-        &:hover {
-            background-color: #F0F0F0;
-        }
-
-        &.active {
-            color: #fff;
-            font-weight: 700;
-            background-color: #601DC0;
-        }
-    }
-
-    .arrow-back,
-    .arrow-next {
-        padding: 13px 30px;
-
-        @media (max-width: 768px) {
-            padding: 13px 26px;
-        }
-    }
-
-    .arrow-back {
-        background: url(../images/pagination-arrow-previous.svg) no-repeat center;
-    }
-
-    .arrow-next {
-        background: url(../images/pagination-arrow-next.svg) no-repeat center;
-    }
-}
-
-.promo {
-    display: block;
-    position: relative;
-    margin-bottom: 40px;
-
-    img {
-        display: block;
-        width: 100%;
-    }
-
-    span {
-        position: absolute;
-        right: 5px;
-        bottom: -1px;
-        color: #fff;
-        font-size: 10px;
-    }
-}
-
-.stat-trend {
-    font-size: 20px !important;
-    margin-bottom: 12px;
-}
 
 .statistic-trends {
     display: flex;

@@ -1,0 +1,18 @@
+.promo {
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    span {
+        position: absolute;
+        right: 5px;
+        bottom: -1px;
+        color: #fff;
+        font-size: 10px;
+    }
+}
