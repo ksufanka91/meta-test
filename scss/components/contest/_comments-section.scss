@@ -1,0 +1,214 @@
+.comments-section {
+
+    margin-bottom: 40px;
+
+    h3 {
+        font-size: 20px;
+    }
+
+    span {
+        color: #20A94A;
+    }
+
+    .comments-form {
+        display: flex;
+        position: relative;
+
+        textarea {
+            height: 134px;
+            resize: none;
+            flex: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            border: transparent;
+            margin-bottom: 15px;
+            padding: 15px;
+            box-sizing: border-box;
+
+            @media (max-width: 768px) {
+                padding-left: 60px;
+                padding-top: 21px;
+            }
+
+            &::placeholder {
+                font-size: 16px;
+                color: #666;
+            }
+        }
+
+        img {
+            align-self: flex-start;
+            margin-right: 20px;
+
+            @media (max-width: 768px) {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+        }
+    }
+
+    .submit-btn {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            min-width: 380px;
+            font-weight: bold;
+            font-size: 16px;
+            background: #C3C3C3;
+            border-radius: 8px;
+            border: transparent;
+            padding: 11px;
+            color: #fff;
+            margin-bottom: 30px;
+
+            @media (max-width: 768px) {
+                min-width: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .comments {
+
+        .inner {
+            margin-bottom: 20px;
+        }
+
+        .item {
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .name {
+                align-self: center;
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            .post {
+                position: relative;
+                align-self: center;
+                margin-left: 24px;
+                color: #20A94A;
+                font-weight: 700;
+
+                &.color {
+                    color: #601DC0;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -14px;
+                    bottom: 7px;
+                    width: 4px;
+                    height: 4px;
+                    background-color: #979797;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .comments-header {
+            display: flex;
+            margin-bottom: 8px;
+
+            @media (max-width: 768px) {
+                //flex-direction: column;
+            }
+
+            .logo {
+                margin-right: 15px;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+                min-width: 40px;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .comments-user-info {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .comments-body {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 9px;
+        }
+
+        .comments-footer {
+            display: flex;
+            justify-content: space-between;
+
+            .rating {
+                margin: 0 11px;
+                color: #20A94A;
+
+                &.no-color {
+                    color: #979797;
+                }
+
+                &.red-color {
+                    color: #D0021B;
+                }
+            }
+
+            .dislike-icon {
+                margin-right: 21px;
+            }
+
+            .reply {
+                color: #666;
+
+            }
+        }
+
+        .comments-control {
+            display: flex;
+        }
+
+        .comment-date {
+            display: flex;
+            color: #979797;
+
+            .date {
+                margin-right: 10px;
+            }
+        }
+
+        .more-replies {
+            display: flex;
+            color: #999;
+            font-size: 16px;
+            margin-bottom: 30px;
+
+            .show-more {
+                margin-right: 15px;
+            }
+        }
+
+        .button {
+            margin-bottom: 20px;
+            width: 100%;
+            color: #000;
+            border: 1px solid #999;
+            text-align: center;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+}

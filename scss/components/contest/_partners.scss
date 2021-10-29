@@ -1,0 +1,46 @@
+.partners {
+    margin-bottom: 27px;
+
+    .title {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .item {
+        display: flex;
+        justify-content: center;
+        //padding: 0 10px;
+    }
+
+    .splide__track {
+        background-color: #F7F7F7;
+        padding: 20px 40px;
+        border-radius: 8px;
+    }
+
+    .splide__arrow {
+        background: #fff url("../images/partners-slider-arrow-next.svg") no-repeat center;
+        width: 28px;
+        height: 28px;
+        opacity: 1;
+        border: 1px solid #c4c4c4;
+
+        &:disabled {
+            display: none;
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    .splide__arrow--prev {
+        left: -14px;
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    .splide__arrow--next {
+        right: -14px;
+    }
+}

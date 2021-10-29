@@ -1,0 +1,81 @@
+.sport-list {
+    position: relative;
+    margin-top: 21px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 64px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #D5D5D5;
+    }
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 18px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    .item {
+        //display: flex;
+        //flex-direction: column;
+        position: relative;
+        width: 170px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 30px;
+
+        }
+
+        .competitions-list {
+
+            @media (max-width: 768px) {
+                column-count: 2;
+                column-gap: 10px;
+            }
+        }
+
+        .competition-name {
+            margin-bottom: 12px;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .black-arrow-up,
+    .black-arrow-down {
+
+        @media (max-width: 768px) {
+            position: absolute;
+            top: 5px;
+            right: 6px;
+        }
+    }
+
+
+    .show-more-competitions {
+        display: flex;
+        color: #999;
+        font-size: 16px;
+        margin-bottom: 70px;
+
+        .show-more {
+            margin-right: 15px;
+        }
+    }
+}
