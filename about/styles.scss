@@ -1,5 +1,5 @@
-@import "scss/fonts";
-@import "scss/nullstyles";
+@import "../scss/fonts";
+@import "../scss/nullstyles";
 
 body {
     background-color: #e5e5e5;
@@ -56,29 +56,29 @@ h3 {
     }
 }
 
-@import "scss/components/header";
+@import "../scss/components/header";
 
-@import "scss/components/breadcrumbs";
+@import "../scss/components/about/breadcrumbs";
 
-@import "scss/components/brief-info";
+@import "../scss/components/about/brief-info";
 
-@import "scss/components/slogan";
+@import "../scss/components/about/slogan";
 
-@import "scss/components/about-us";
+@import "../scss/components/about/about-us";
 
-@import "scss/components/certificate-info";
+@import "../scss/components/about/certificate-info";
 
-@import "scss/components/products";
+@import "../scss/components/about/products";
 
-@import "scss/components/team";
+@import "../scss/components/about/team";
 
-@import "scss/components/all-vacacies";
+@import "../scss/components/about/all-vacacies";
 
-@import "scss/components/vacancies";
+@import "../scss/components/about/vacancies";
 
-@import "scss/components/office";
+@import "../scss/components/about/office";
 
-@import "scss/components/map";
+@import "../scss/components/about/map";
 
 
 
