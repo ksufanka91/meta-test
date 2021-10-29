@@ -1,0 +1,11 @@
+.footer-rights {
+    display: flex;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    .age {
+        margin-right: 13px;
+    }
+}

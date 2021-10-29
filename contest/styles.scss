@@ -134,131 +134,26 @@ main {
 
 @import "../scss/components/contest/partners";
 
+@import "../scss/components/contest/footer-logo";
+
+@import "../scss/components/contest/footer-info";
+
+@import "../scss/components/contest/footer-license";
+
+@import "../scss/components/contest/footer-partners";
+
+@import "../scss/components/contest/footer-rights";
 
 
 
 
 
 
-.footer-logo {
-    margin-bottom: 26px;
-}
 
-.footer-info {
-    display: flex;
-    margin-bottom: 15px;
 
-    @media (max-width: 768px) {
-        display: block;
-        font-size: 14px;
-    }
 
-    .footer-text {
-        flex: 1;
-        margin-right: 80px;
-        line-height: 22px;
 
-        @media (max-width: 768px) {
-            margin-right: 0;
 
-        }
 
-        a {
-            color: #20A94A;
-        }
-    }
 
-    .footer-text-mobile {
 
-        @media (max-width: 768px) {
-            margin: 25px 0 30px;
-        }
-    }
-
-    .management {
-        margin-bottom: 15px;
-    }
-
-    .footer-contacts {
-        flex: 1;
-        line-height: 26px;
-
-        .title {
-            color: #999;
-            margin-right: 15px;
-            min-width: 43px;
-        }
-
-        .contacts {
-
-            display: flex;
-            flex-direction: column;
-
-            .item {
-                display: flex;
-            }
-        }
-
-        .post {
-
-            span {
-                color: #999;
-            }
-        }
-    }
-
-}
-
-.footer-license {
-    margin-bottom: 25px;
-    line-height: 22px;
-
-    @media (max-width: 768px) {
-        font-size: 14px;
-    }
-
-    a {
-        color: #20A94A;
-    }
-}
-
-.footer-partners {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    margin-bottom: 19px;
-
-    @media (max-width: 768px) {
-        flex-wrap: wrap;
-        margin-bottom: 41px;
-
-        &::after {
-            content: "";
-            position: absolute;
-            height: 1px;
-            background-color: #D5D5D5;
-            left: 0;
-            right: 0;
-            bottom: -12px;
-        }
-    }
-
-    a {
-        @media (max-width: 768px) {
-            margin-bottom: 20px;
-
-        }
-    }
-}
-
-.footer-rights {
-    display: flex;
-
-    @media (max-width: 768px) {
-        font-size: 14px;
-    }
-
-    .age {
-        margin-right: 13px;
-    }
-}

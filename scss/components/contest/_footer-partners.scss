@@ -1,0 +1,28 @@
+.footer-partners {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 19px;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        margin-bottom: 41px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            background-color: #D5D5D5;
+            left: 0;
+            right: 0;
+            bottom: -12px;
+        }
+    }
+
+    a {
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+
+        }
+    }
+}

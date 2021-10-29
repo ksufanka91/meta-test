@@ -1,0 +1,12 @@
+.footer-license {
+    margin-bottom: 25px;
+    line-height: 22px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    a {
+        color: #20A94A;
+    }
+}
