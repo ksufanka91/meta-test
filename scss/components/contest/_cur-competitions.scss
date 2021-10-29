@@ -1,0 +1,17 @@
+.cur-competitions {
+
+    @media (max-width: 768px) {
+        width: 100%;
+        font-size: 16px;
+        padding: 11px 50px 11px 15px;
+        font-weight: 700;
+        border: 1px solid #E9E9E9;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-bottom: 18px;
+        appearance: none;
+        background: url('../images/black-arrow-down.svg') no-repeat 94% 50%;
+    }
+}
+
+//

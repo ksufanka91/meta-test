@@ -1,0 +1,172 @@
+.forecast-competition {
+
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 20px 8px 11px 11px;
+    margin-bottom: 16px;
+
+    @media (max-width: 768px) {
+        border: none;
+        padding: 20px 0 11px 0;
+    }
+
+    .row {
+        position: relative;
+        margin-bottom: 6px;
+
+        @media (max-width: 768px) {
+            border: 1px solid #E5E5E5;
+            border-radius: 8px;
+            padding: 15px 0 11px;
+        }
+
+        &:first-child {
+
+            &:after {
+                position: absolute;
+                display: block;
+                content: '';
+                background: #E5E5E5;
+                bottom: -15px;
+                height: 1px;
+            }
+        }
+    }
+
+    .top-places {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .place {
+            display: flex;
+
+            @media (max-width: 768px) {
+                margin-bottom: 13px;
+
+                &:last-child {
+                    margin-bottom: 1px;
+                }
+            }
+
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .all-top-places {
+        color: #999999;
+        text-align: center;
+        margin-bottom: 29px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 11px;
+            font-size: 14px;
+        }
+    }
+
+    .forecast-title {
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 14px;
+
+        @media (max-width: 768px) {
+            text-align: start;
+            margin-bottom: -1px;
+        }
+    }
+
+    .row {
+        @media (max-width: 768px) {
+            overflow-x: scroll;
+            border: none;
+        }
+    }
+
+    .forecast-achievements {
+        display: flex;
+        justify-content: space-around;
+
+        @media (max-width: 768px) {
+            width: fit-content;
+
+        }
+
+        .achievement {
+            position: relative;
+            text-align: center;
+            width: 150px;
+
+            @media (max-width: 768px) {
+                margin-right: 3px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            .prize {
+                display: inline-block;
+                padding: 4px 6px;
+                background-color: rgba(32, 169, 74, 0.08);
+                border-radius: 8px;
+                color: #20A94A;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 10px;
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 6px;
+            }
+
+            .text {
+
+                &.bold {
+                    font-weight: 700;
+                }
+            }
+
+            .tooltip {
+                position: absolute;
+                top: 37px;
+                right: 30px;
+                width: 16px;
+                height: 16px;
+                background-color: #DFDFDF;
+                border-radius: 50%;
+                color: #fff;
+                font-size: 10px;
+            }
+
+            .multiple-prize {
+                position: absolute;
+                bottom: 68px;
+                right: 39px;
+                min-width: 20px;
+                /*height: 20px;*/
+                padding: 2px 3px 0 5px;
+                box-sizing: border-box;
+                background-color: #F2EDFA;
+                border-radius: 12px;
+                border: 2px solid #DBC4FF;
+                color: #601DC0;
+                font-size: 12px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+    }
+}

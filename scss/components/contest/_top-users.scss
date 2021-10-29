@@ -1,0 +1,41 @@
+.top-users {
+    .item {
+        display: flex;
+
+        &.selected {
+            color: #601DC0;
+            font-weight: 700;
+        }
+
+        .prize {
+            margin-right: 10px;
+        }
+
+        .name {
+            margin-right: auto;
+        }
+    }
+
+    ol {
+        padding-left: 24px;
+
+        li {
+            padding-left: 2px;
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .rating {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 20px;
+        color: #000;
+        padding-right: 8px;
+    }
+}

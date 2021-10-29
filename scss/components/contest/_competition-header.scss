@@ -1,0 +1,129 @@
+.competition-header {
+
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 11px;
+    }
+
+    .col {
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .main-header {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        margin: 0;
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #E5E5E5;
+        border-radius: 8px;
+        box-sizing: border-box;
+
+        @media (max-width: 768px) {
+            width: 80px;
+            height: 80px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .statuses {
+        margin-bottom: 3px;
+
+        .status {
+            display: inline-block;
+            margin-right: 2px;
+            padding: 3px 7px;
+            font-size: 10px;
+            line-height: 11px;
+            border-radius: 3px;
+            border: 1px solid #20A94A;
+            color: #20A94A;
+        }
+
+        .active {
+            background-color: #20A94A;
+            border: none;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+
+    .info {
+        display: flex;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        .prize-fund {
+            color: #601DC0;
+            background-color: rgba(96, 29, 192, 0.08);
+            padding: 3px 19px 4px 14px;
+            border-radius: 8px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 700;
+            display: flex;
+            margin-right: 7px;
+
+            @media (max-width: 768px) {
+                margin: 0 0 10px 0;
+            }
+
+            .gift-icon {
+                margin-right: 9px;
+            }
+
+            div {
+                padding-top: 3px;
+            }
+        }
+
+        .progress {
+            position: relative;
+            background: rgba(32, 169, 74, 0.1);
+            color: #20A94A;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 5px 17px;
+            border-radius: 8px;
+            overflow: hidden;
+
+            .progress-bar {
+                position: absolute;
+                z-index: 10;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                height: 100%;
+                background: rgba(32, 169, 74, 0.35);
+            }
+        }
+    }
+}
