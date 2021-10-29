@@ -118,6 +118,13 @@ main {
 
 @import "../scss/components/contest/stat-trend";
 
+@import "../scss/components/contest/statistic-trends";
+
+@import "../scss/components/contest/more-statistics";
+
+@import "../scss/components/contest/comp-news";
+
+@import "../scss/components/contest/competition-news";
 
 
 
@@ -130,136 +137,9 @@ main {
 
 
 
-.statistic-trends {
-    display: flex;
-    flex-direction: column;
-    background: rgba(96, 29, 192, 0.06);
-    border: 1px solid rgba(96, 29, 192, 0.12);
-    box-sizing: border-box;
-    border-radius: 8px;
-    padding: 18px 14px;
-    margin-bottom: 16px;
 
 
-    @media (max-width: 768px) {
-        padding: 10px;
-    }
 
-
-    .item {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-
-        @media (max-width: 768px) {
-            flex-direction: column;
-        }
-
-        .inner {
-            display: flex;
-
-            @media (max-width: 768px) {
-                margin-bottom: 8px;
-            }
-        }
-
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -14px;
-            height: 1px;
-            width: 100%;
-            background-color: #fff;
-        }
-
-        &:last-child::after {
-            content: none;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    span {
-        font-size: 16px;
-    }
-
-    .rate {
-        align-self: flex-start;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
-        color: #601DC0;
-        margin-right: 9px;
-        min-width: 62px;
-    }
-
-    .title {
-        font-size: 16px;
-        margin-right: 15px;
-        line-height: 1.3;
-        letter-spacing: -0.1px;
-
-        @media (max-width: 768px) {
-            font-size: 14px;
-            margin-right: 0;
-        }
-    }
-
-    .button {
-        white-space: nowrap;
-        padding: 8px 13px;
-
-        @media (max-width: 768px) {
-            width: 100%;
-            text-align: center;
-        }
-    }
-}
-
-.more-statistics {
-    margin-bottom: 37px;
-
-    .button {
-        width: 100%;
-        color: #000;
-        border: 2px solid #E9E9E9;
-    }
-}
-
-.comp-news {
-    margin-bottom: 12px;
-}
-
-.competition-news {
-    margin-bottom: 36px;
-
-    .inner {
-        margin-bottom: 20px;
-    }
-
-    .item {
-        margin-bottom: 14px;
-        font-size: 14px;
-    }
-
-    span {
-        margin-left: 7px;
-        font-size: 12px;
-        color: #999;
-    }
-
-    .button {
-        width: 100%;
-        color: #000;
-        border: 2px solid #E9E9E9;
-        cursor: pointer;
-    }
-}
 
 .comments-section {
 
