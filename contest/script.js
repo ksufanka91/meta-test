@@ -20,16 +20,17 @@ buttons.forEach(function (button) {
 });
 
 
-let splide = new Splide( '.splide', {
+let splide = new Splide('.splide', {
     perMove: 1,
     pagination: false,
     gap: '40px',
     autoWidth: true,
     padding: '40px'
-} );
+});
 
 splide.mount();
 
+/*
 let options = {
     perPage: 3,
     perMove: 1,
@@ -45,3 +46,4 @@ if (window.innerWidth < 769) {
 let slider2 = new Splide('.vacancies-slider', options);
 
 slider2.mount();
+*/
