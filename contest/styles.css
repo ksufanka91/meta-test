@@ -976,8 +976,7 @@ main {
   .competition-news .button {
     width: 100%;
     color: #000;
-    border: 2px solid #E9E9E9;
-    cursor: pointer; }
+    border: 2px solid #E9E9E9; }
 
 .comments-section {
   margin-bottom: 40px; }
