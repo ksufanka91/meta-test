@@ -63,6 +63,10 @@ body {
     background-color: transparent;
     color: #601DC0;
     cursor: pointer;
+
+    &:disabled {
+        cursor: default;
+    }
 }
 
 a {

@@ -52,6 +52,8 @@ body {
   background-color: transparent;
   color: #601DC0;
   cursor: pointer; }
+  .button:disabled {
+    cursor: default; }
 
 a {
   text-decoration: none;
