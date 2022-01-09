@@ -8,11 +8,9 @@
     padding: 18px 14px;
     margin-bottom: 16px;
 
-
     @media (max-width: 768px) {
         padding: 10px;
     }
-
 
     .item {
         position: relative;
@@ -31,7 +29,6 @@
                 margin-bottom: 8px;
             }
         }
-
 
         &::after {
             content: '';

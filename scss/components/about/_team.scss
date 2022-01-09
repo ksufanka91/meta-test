@@ -1,7 +1,6 @@
 .team {
     margin-bottom: 44px;
 
-
     .row {
         margin-bottom: 20px;
         display: flex;
@@ -16,7 +15,6 @@
 
         .item {
             position: relative;
-            //width: 215px;
             width: calc(25% - 20px * 3 / 4);
             height: 215px;
             border-radius: 8px;

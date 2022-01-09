@@ -61,12 +61,16 @@ body {
 
 .button {
   border: 2px solid rgba(96, 29, 192, 0.16);
-  box-sizing: border-box;
+  padding: 10px;
   border-radius: 8px;
   text-decoration: none;
-  padding: 10px;
+  box-sizing: border-box;
   background-color: transparent;
   color: #601DC0;
+  cursor: pointer;
+}
+.button:disabled {
+  cursor: default;
 }
 
 a {
@@ -1292,7 +1296,6 @@ main {
   width: 100%;
   color: #000;
   border: 2px solid #E9E9E9;
-  cursor: pointer;
 }
 
 .comments-section {

@@ -117,10 +117,6 @@
             display: flex;
             margin-bottom: 8px;
 
-            @media (max-width: 768px) {
-                //flex-direction: column;
-            }
-
             .logo {
                 margin-right: 15px;
                 border-radius: 50%;
