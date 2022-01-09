@@ -24,7 +24,7 @@
     }
 
     .splide__arrow {
-        background: #fff url("../../images/products-slider-arrow.svg") no-repeat center;
+        background: #fff url("../images/products-slider-arrow.svg") no-repeat center;
         width: 28px;
         height: 28px;
         opacity: 1;
@@ -53,7 +53,7 @@
             visibility: visible;
 
             .splide__list {
-                display: flex;
+                display: flex !important;
                 width: 100%;
                 flex-wrap: wrap;
             }
@@ -66,6 +66,12 @@
                 &:nth-child(2n) {
                     margin-right: 0;
                 }
+            }
+        }
+
+        @media (max-width: 375px) {
+            .splide__slide {
+                width: 100%;
             }
         }
     }

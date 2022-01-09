@@ -56,12 +56,17 @@ body {
 
 .button {
     border: 2px solid rgba(96, 29, 192, 0.16);
-    box-sizing: border-box;
+    padding: 10px;
     border-radius: 8px;
     text-decoration: none;
-    padding: 10px;
+    box-sizing: border-box;
     background-color: transparent;
     color: #601DC0;
+    cursor: pointer;
+
+    &:disabled {
+        cursor: default;
+    }
 }
 
 a {

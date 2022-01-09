@@ -5,10 +5,24 @@ let slider = new Splide('.products-slider', {
     gap: '10px',
 });
 
-if (window.innerWidth > 768) {
-    slider.mount();
+let sliderInit = false;
+
+function checkSlider() {
+    if (window.innerWidth > 768) {
+        if (!sliderInit) {
+            slider.mount();
+            sliderInit = true;
+        }
+    } else {
+        if (sliderInit) {
+            slider.destroy();
+            sliderInit = false;
+        }
+    }
 }
 
+checkSlider();
+window.addEventListener('resize', checkSlider);
 
 let options = {
     perPage: 4,
@@ -17,11 +31,23 @@ let options = {
     gap: '20px',
 };
 
-if (window.innerWidth < 769) {
-    options.perPage = 1;
-    options.fixedWidth = 215;
-}
-
 let slider2 = new Splide('.vacancies-slider', options);
 
 slider2.mount();
+
+function checkSlider2() {
+    if (window.innerWidth < 769) {
+        slider2.options = {
+            perPage: 1,
+            fixedWidth: 215,
+        };
+    } else {
+        slider2.options = {
+            perPage: 4,
+            fixedWidth: null,
+        };
+    }
+}
+
+checkSlider2();
+window.addEventListener('resize', checkSlider2);
