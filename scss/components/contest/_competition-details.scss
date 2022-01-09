@@ -33,6 +33,10 @@
         &.first,
         &.second {
             flex: 1;
+
+            @media (max-width: 425px) {
+                font-size: 14px;
+            }
         }
 
         &.first {
@@ -43,7 +47,6 @@
         }
 
         &.third {
-
             img {
                 transform: translateY(3px);
             }
